@@ -45,13 +45,13 @@
       }],
       ["OS == 'android'", {
         "cflags": [ "-fPIC" ],
-        "ldflags": [ "-fPIC" ],
+        "ldflags": [ "-fPIC, -Wl,-z,max-page-size=16384" ],
         "cflags!": [
           "-fno-tree-vrp",
           "-mfloat-abi=hard",
           "-fPIE"
         ],
-        "ldflags!": [ "-fPIE" ]
+        "ldflags!": [ "-fPIE, -Wl,-z,max-page-size=16384" ]
       }],
       ["target_arch == 'arm'", {
         "cflags": [ "-mfloat-abi=hard" ]
