@@ -26,7 +26,7 @@ jobs:
           node-version: 18
           architecture: ${{ matrix.arch }}
       - name: Install
-        run: npm install --ignore-scripts
+        run: npm install --build-from-source --ignore-scripts
       - name: Prebuild
         run: npm run prebuild-$BUILD_GROUP
         shell: bash
