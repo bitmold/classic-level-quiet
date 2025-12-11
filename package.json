@@ -44,7 +44,7 @@
     "faucet": "^0.0.3",
     "glob": "^8.0.1",
     "hallmark": "^4.1.0",
-    "mkfiletree": "^2.0.0",
+    "mkfiletree": "^3.0.0",
     "node-gyp": "^9.0.0",
     "nyc": "^15.0.0",
     "prebuildify": "^5.0.0",
